@@ -1,0 +1,1 @@
+"use strict";var number=function(){console.log("number: ",1)},mystring="hello!";number();
