@@ -30,7 +30,10 @@ class Editor {
         })
 
         this.monacoEditor.onKeyUp(() => {
-            if (window.error) Editor.setError()
+            if (window.error) {
+                Editor.setError()
+            }
+            
             if (window.isSaved == true) {
                 jQuery('.save-button').text('Save')
                 window.isSaved =false    
@@ -174,7 +177,7 @@ class Editor {
             jQuery('.ijs-error-container').text(error)
         } else {
             window.error = null
-            jQuery('ijs-error-block').fadeOut()
+            jQuery('.ijs-error-block').fadeOut()
             jQuery('.save-button').text('Save!').removeClass('button-danger').removeClass('is-busy')
         }
     }
