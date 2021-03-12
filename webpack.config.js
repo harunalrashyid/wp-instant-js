@@ -1,3 +1,5 @@
+const WP_PLUGIN_PATH = '../wp-content/plugins/instant-js';
+
 const path = require('path');
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 
@@ -26,8 +28,17 @@ module.exports = {
                 ]
             },
             {
-                test: /\.ttf$/,
-                use: ['file-loader']
+                test: /\.(ttf|eot|svg|woff2?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]?[hash]',
+                            outputPath: 'fonts/',
+                            publicPath: `${WP_PLUGIN_PATH}/assets/dist/fonts`
+                        }
+                    }
+                ]
             },
             {
                 test: /\.m?js$/,
