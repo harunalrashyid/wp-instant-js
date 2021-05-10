@@ -1,4 +1,4 @@
-# instantjs-wp
+# Wordpress Instant JS
 Use the power of Visual Studio Code in WordPress
 using babel and uglify
 
