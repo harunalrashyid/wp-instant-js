@@ -1,4 +1,4 @@
-const WP_PLUGIN_PATH = '../wp-content/plugins/instant-js';
+const WP_PLUGIN_PATH = '../wp-content/plugins/wp-instant-js';
 
 const path = require('path');
 const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');

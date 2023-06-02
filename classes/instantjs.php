@@ -55,6 +55,7 @@ class InstantJS
     public function ijs_admin_dependencies()
     {
         wp_enqueue_style( 'ijs-styles', plugins_url('assets/css/style.css', dirname(__FILE__)), array(), IJS_VERSION );
+        wp_enqueue_style( 'font-codicon', plugins_url( 'assets/dist/fonts/codicon.ttf', dirname(__FILE__) ), array(), null );
         wp_enqueue_script( 'ijs-vendor', plugins_url('assets/dist/vendors~main.bundle.js', dirname(__FILE__)), array(), IJS_VERSION, true );
         wp_enqueue_script( 'monaco-editor', plugins_url('assets/dist/main.bundle.js', dirname(__FILE__)), array(), IJS_VERSION, true );
         wp_localize_script( 'monaco-editor', 'wordpress', array(
