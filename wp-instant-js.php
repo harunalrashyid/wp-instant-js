@@ -3,14 +3,14 @@
 /**
  * Plugin Name: Instant JS
  * Description: Write your scirpts beautifully with the power of Visual Studio Code
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Harun
  * Author URI:  https://github.com/harunalrashyid/instantjs-wp
  * License:     GPL-3.0
  * License URI: https://raw.githubusercontent.com/harunalrashyid/instantjs-wp/master/LICENSE
  */
 
-define('IJS_VERSION', '1.0.0');
+define('IJS_VERSION', '1.0.1');
 
 if ( !defined( 'ABSPATH' ) ) {
     die( 'Access Denied' );
