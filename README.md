@@ -15,6 +15,6 @@ Use the power of Visual Studio Code in WordPress to write your custom JS. The pl
 #### Features
 * Use all the powerful features from Visual Studio Code
 * Your JS gets compiled with babel to work on older browsers
-* Option to minify your CSS to reduce loading times
+* Option to minify your JS to reduce loading times
 * No refreshing on saving
 
